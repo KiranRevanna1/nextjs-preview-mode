@@ -1,0 +1,35 @@
+.dialog pre {
+  background-color: var(--geist-cyan);
+  color: #000;
+}
+
+.dialog li:first-child {
+  list-style-type: '🚀 ';
+}
+.dialog li:last-child {
+  list-style-type: '🤯 ';
+}
+.dialog [data-cta] {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dialog [data-cta] > * {
+  flex-grow: 1;
+}
+
+.dialog [data-cta] > :last-child {
+  flex-grow: 1.5;
+}
+
+@media (max-width: 768px) {
+  .dialog [data-cta] {
+    flex-direction: column-reverse;
+  }
+
+  .dialog [data-cta] > * {
+    margin-bottom: 1em;
+  }
+}
